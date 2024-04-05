@@ -161,7 +161,7 @@ a {
   flex: 1;
 }
 
-.premise__list ul {
+.premise__list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -195,6 +195,11 @@ a {
 }
 .projects__content div {
   flex: 1 1 0px;
+}
+
+.projects__link {
+  font-weight: 700;
+  padding: 5px 0;
 }
 
 .projects__list h3 {
@@ -392,7 +397,7 @@ a {
 .cta__emphasize {
   background-color: var(--dark);
   color: var(--secondary);
-  padding: 4px 6px;
+  padding: 0 8px 4px 8px;
 }
 
 .cta__heading {
@@ -404,9 +409,6 @@ a {
 .cta strong {
   display: block;
   margin-bottom: 40px;
-}
-
-.other {
 }
 
 .other h2 {
@@ -459,4 +461,134 @@ a {
 .footer span {
   padding: 0 10px;
   text-align: center;
+}
+
+footer {
+  padding: 24px 0;
+  font-size: 14px;
+}
+
+/* Responsive */
+/* Tablet */
+@media only screen and (max-width: 925px) {
+  :root {
+    --mobile-padding: 20px;
+  }
+  .container {
+    padding: 0 var(--mobile-padding);
+  }
+  .title__text {
+  }
+
+  .section-video__desc {
+    flex-direction: column;
+    gap: 0;
+  }
+  .section-video__desc h1 {
+    text-align: left;
+    line-height: 50px;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px;
+  }
+
+  .premise__content {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+  }
+
+  .premise__list {
+    max-width: 450px;
+  }
+
+  .premise__list li {
+    flex: 50%;
+  }
+  .premise__list li:nth-child(odd) {
+    padding-right: 50px;
+  }
+  .premise__list li:nth-child(even) {
+    padding-right: 0;
+  }
+
+  .projects__content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .projects__desc {
+    order: -1;
+  }
+
+  .projects__list {
+    padding-left: 0;
+  }
+
+  .QNA__content {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .QNA__card {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile and below */
+
+@media only screen and (max-width: 600px) {
+  .mobile__hide {
+    display: none;
+  }
+  .section-video {
+    padding-top: 38%;
+  }
+
+  .title__text {
+    font-size: 36px;
+  }
+
+  .flashcards__content {
+    flex-direction: column;
+  }
+
+  .flashcards__video {
+    order: 1;
+  }
+  .flashcards__desc {
+    order: 0;
+  }
+
+  .comments__list {
+    flex-direction: column;
+  }
+
+  .instructor__content {
+    flex-direction: column;
+  }
+
+  .instructor__desc {
+    order: -1;
+  }
+
+  .pricing__content {
+    flex-direction: column;
+  }
+
+  .pricing__desc {
+    order: -1;
+  }
+
+  .footer__right {
+    flex-wrap: wrap;
+  }
+
+  #copyrights {
+    display: block !important;
+    padding-top: 15px;
+  }
 }

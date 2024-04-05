@@ -98,44 +98,42 @@
               </p>
               <p>The lessons & challenges will guide you through these topics step by step:</p>
             </div>
-            <div class="premise__list secondary__bullets">
-              <ul>
-                <li>Accessibility</li>
-                <li>Semantics</li>
-                <li>Headings</li>
-                <li>Meta tags</li>
-                <li>Semantic elements</li>
-                <li>Non-semantic elements</li>
-                <li>HTML Validation</li>
-                <li>Left to right direction</li>
-                <li>Horizontal writing mode</li>
-                <li>Landmarks</li>
-                <li>Reader mode</li>
-                <li>DevTools (Inspect)</li>
-                <li>Images</li>
-                <li>Fonts</li>
-                <li>Units</li>
-                <li>Responsiveness</li>
-                <li>Box models</li>
-                <li>Selectors</li>
-                <li>Collapsing margins</li>
-                <li>CSS (axis) Shorthands</li>
-                <li>Anchors</li>
-                <li>UI Kit</li>
-                <li>Color accessibility</li>
-                <li>Custom Properties</li>
-                <li>Flex</li>
-                <li>Grid</li>
-                <li>Positioning</li>
-                <li>Forms</li>
-                <li>Variable fonts</li>
-                <li>Stacking contexts</li>
-                <li>Container queries</li>
-                <li>Scroll Snap</li>
-                <li>Responsive utilities</li>
-                <li>Much more...</li>
-              </ul>
-            </div>
+            <ul class="premise__list secondary__bullets">
+              <li>Accessibility</li>
+              <li>Semantics</li>
+              <li>Headings</li>
+              <li>Meta tags</li>
+              <li>Semantic elements</li>
+              <li>Non-semantic elements</li>
+              <li>HTML Validation</li>
+              <li>Left to right direction</li>
+              <li>Horizontal writing mode</li>
+              <li>Landmarks</li>
+              <li>Reader mode</li>
+              <li>DevTools (Inspect)</li>
+              <li>Images</li>
+              <li>Fonts</li>
+              <li>Units</li>
+              <li>Responsiveness</li>
+              <li>Box models</li>
+              <li>Selectors</li>
+              <li>Collapsing margins</li>
+              <li>CSS (axis) Shorthands</li>
+              <li>Anchors</li>
+              <li>UI Kit</li>
+              <li>Color accessibility</li>
+              <li>Custom Properties</li>
+              <li>Flex</li>
+              <li>Grid</li>
+              <li>Positioning</li>
+              <li>Forms</li>
+              <li>Variable fonts</li>
+              <li>Stacking contexts</li>
+              <li>Container queries</li>
+              <li>Scroll Snap</li>
+              <li>Responsive utilities</li>
+              <li>Much more...</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -150,9 +148,9 @@
             <div>
               <ul class="projects__list">
                 <li>
-                  <h3 class="projects__link opened">
+                  <div class="projects__link opened">
                     <i class="fa-solid fa-chevron-down"></i>Portfolio web page
-                  </h3>
+                  </div>
                   <div class="projects__list__details">
                     <img id="portfolio" src="assets/images/portfolio.webp" alt="img here" />
                     <p>
@@ -162,9 +160,9 @@
                   </div>
                 </li>
                 <li>
-                  <h3 class="projects__link closed">
+                  <div class="projects__link closed">
                     <i class="fa-solid fa-chevron-down"></i>MyBank: Mobile banking web app
-                  </h3>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -289,7 +287,7 @@
 
             <div class="instructor__desc">
               <h2 class="title__text">
-                About the <br />
+                About the <br class="mobile__hide" />
                 instructor
               </h2>
               <p>
@@ -310,7 +308,7 @@
       <div class="QNA section">
         <div class="container">
           <h2 class="title__text">Why Learn HTML CSS through this course?</h2>
-          <div class="QNA__content content">
+          <div class="content QNA__content">
             <div class="QNA__card card">
               <h3>Lessons</h3>
               <ul class="card__reasons secondary__bullets">
@@ -336,14 +334,14 @@
             </div>
 
             <div class="QNA__card card">
-              <h3>Lessons</h3>
+              <h3>Flashcards</h3>
               <ul class="card__reasons secondary__bullets">
-                <li>Read concise lessons</li>
-                <li>Save notes in lessons</li>
-                <li>Export & print your notes</li>
-                <li>Read a recap of topics learned</li>
-                <li>Suggested popular highlights</li>
-                <li>Read a recap of every lesson</li>
+                <li>Keep your memory fresh</li>
+                <li>Learn on the go</li>
+                <li>Benefit from spaced repetition</li>
+                <li>Review per chapter</li>
+                <li>Maintain your progress streak</li>
+                <li>200+ flashcards</li>
               </ul>
             </div>
           </div>
@@ -474,7 +472,7 @@
           <div class="footer__right">
             <span><a href="#">Made by Jad Joubran</a></span>
             <span><a href="#">Designed by Lars & Nikolai</a></span>
-            <span><a href="#">© 2024</a></span>
+            <span id="copyrights"><a href="#">© 2024</a></span>
           </div>
         </div>
       </footer>
