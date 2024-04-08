@@ -569,6 +569,7 @@ footer {
 
   .instructor__content {
     flex-direction: column;
+    gap: 20px;
   }
 
   .instructor__desc {
